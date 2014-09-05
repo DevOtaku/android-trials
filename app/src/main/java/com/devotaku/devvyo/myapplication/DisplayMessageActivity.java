@@ -15,6 +15,8 @@ public class DisplayMessageActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_message);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         Intent intent = getIntent();
         String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 
